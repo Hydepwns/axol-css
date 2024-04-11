@@ -4,19 +4,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lightcoral: "#e68476",
+        "brand-colors-decentralized-coral": "#e68476",
         "brand-colors-shadow-blockchain": "#15002e",
         "brand-colors-axol-coral": "#ffcd9c",
         "brand-colors-node-indigo": "#28338b",
         "brand-colors-cryptowave-sky": "#58a1c6",
+        darkslateblue: "#4f59b3",
         "brand-colors-crypto-frost": "#fdfff9",
         lavender: "rgba(242, 232, 255, 0.5)",
+        burlywood: "#e6b382",
+        gainsboro: "rgba(227, 230, 224, 0.09)",
         blanchedalmond: "#ffe7ce",
       },
       spacing: {},
       fontFamily: {
         "body-s": "'Plus Jakarta Sans'",
-        h5: "Panamera",
+        h4: "Panamera",
       },
       borderRadius: {
         "8981xl": "9000px",
@@ -31,13 +34,30 @@ module.exports = {
       base: "16px",
       xl: "20px",
       "5xl": "24px",
+      lgi: "19px",
       "45xl": "64px",
+      "32xl": "51px",
+      "19xl": "38px",
       "9xl": "28px",
+      "3xl": "22px",
       "17xl": "36px",
+      "10xl": "29px",
       "sm-9": "13.9px",
-      "53xl": "72px",
-      "29xl": "48px",
       inherit: "inherit",
+    },
+    screens: {
+      mq1275: {
+        raw: "screen and (max-width: 1275px)",
+      },
+      mq1100: {
+        raw: "screen and (max-width: 1100px)",
+      },
+      mq750: {
+        raw: "screen and (max-width: 750px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
     },
   },
   corePlugins: {
