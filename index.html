@@ -273,7 +273,7 @@
         />
       </section>
       <section
-        class="self-stretch flex flex-col justify-start max-w-full text-center text-45xl text-brand-colors-crypto-frost font-body-s mt-[-41px]"
+        class="self-stretch flex flex-col justify-start max-w-full text-center text-45xl text-brand-colors-crypto-frost font-body-s"
       >
         <div
           class="self-stretch bg-brand-colors-cryptowave-sky overflow-hidden flex flex-col items-end justify-start pt-4 px-[31px] pb-[20px] box-border relative gap-[48px] max-w-full mq750:gap-[24px] mq750:pl-[15.5px] mq750:pr-[15.5px] mq750:box-border mq450:pt-[10.5px] mq450:pb-[20.5px] mq450:box-border"
@@ -529,29 +529,15 @@
           <div
             class="w-[1140px] flex flex-row items-start justify-center py-0 pr-5 pl-0 box-border max-w-full"
           >
-            <div
-              class="rounded-[58px] bg-lavender overflow-x-auto flex flex-row items-start justify-start py-2 px-4 gap-[16px] z-[1]"
-            >
-              <div class="flex flex-row items-center justify-center">
-                <div
-                  class="h-4 w-4 relative rounded-[50%] box-border border-[0px] border-solid border-brand-colors-node-indigo"
-                ></div>
-              </div>
-              <div class="flex flex-row items-center justify-center">
-                <div
-                  class="h-4 w-4 relative rounded-[50%] box-border border-[0px] border-solid border-brand-colors-node-indigo"
-                ></div>
-              </div>
-              <div class="flex flex-row items-center justify-center">
-                <div
-                  class="h-4 w-4 relative rounded-[50%] box-border border-[0px] border-solid border-brand-colors-node-indigo"
-                ></div>
-              </div>
-              <div class="flex flex-row items-center justify-center">
-                <div
-                  class="h-4 w-4 relative rounded-[50%] box-border border-[0px] border-solid border-brand-colors-node-indigo"
-                ></div>
-              </div>
+            <div class="rounded-[58px] bg-lavender overflow-x-auto flex flex-row items-start justify-start py-2 px-4 gap-[16px] z-[1]">
+              <input type="radio" id="radio1" name="sectionRadio" class="radio-button">
+              <label for="radio1" class="radio-label"></label>
+              <input type="radio" id="radio2" name="sectionRadio" class="radio-button">
+              <label for="radio2" class="radio-label"></label>
+              <input type="radio" id="radio3" name="sectionRadio" class="radio-button">
+              <label for="radio3" class="radio-label"></label>
+              <input type="radio" id="radio4" name="sectionRadio" class="radio-button">
+              <label for="radio4" class="radio-label"></label>
             </div>
           </div>
         </div>
@@ -1267,6 +1253,15 @@
           }
         });
       }
+      document.querySelectorAll('.radio-button').forEach((radioButton) => {
+        radioButton.addEventListener('change', (e) => {
+          const index = e.target.id.replace('radio', ''); // Assuming the divs have IDs like 'div1', 'div2', etc.
+          const correspondingDiv = document.getElementById(`div${index}`);
+          // Implement the logic to correlate the radio button with the div
+          // For example, scroll into view or highlight the div
+          correspondingDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+      });
     </script>
   </body>
 </html>
