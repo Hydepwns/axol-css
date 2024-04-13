@@ -530,13 +530,13 @@
             class="w-[1140px] flex flex-row items-start justify-center py-0 pr-5 pl-0 box-border max-w-full"
           >
             <div class="rounded-[58px] bg-lavender overflow-x-auto flex flex-row items-start justify-start py-2 px-4 gap-[16px] z-[1]">
-              <input type="radio" id="radio1" name="sectionRadio" class="radio-button">
+              <input type="radio" id="radio1" name="sectionRadio" class="radio-button" checked required>
               <label for="radio1" class="radio-label"></label>
-              <input type="radio" id="radio2" name="sectionRadio" class="radio-button">
+              <input type="radio" id="radio2" name="sectionRadio" class="radio-button" required>
               <label for="radio2" class="radio-label"></label>
-              <input type="radio" id="radio3" name="sectionRadio" class="radio-button">
+              <input type="radio" id="radio3" name="sectionRadio" class="radio-button" required>
               <label for="radio3" class="radio-label"></label>
-              <input type="radio" id="radio4" name="sectionRadio" class="radio-button">
+              <input type="radio" id="radio4" name="sectionRadio" class="radio-button" required>
               <label for="radio4" class="radio-label"></label>
             </div>
           </div>
@@ -946,28 +946,47 @@
             alt=""
             src="/public/apaperairplanewithadesertfernsandcactiin-1@2x.png"
           />
-
+      <form action="/submit-form" method="POST">
           <div
             class="absolute top-[424px] left-[101px] rounded-md bg-brand-colors-crypto-frost box-border w-[400px] h-[51px] z-[2] border-b-[6px] border-solid border-brand-colors-decentralized-coral"
-          ></div>
+          >
+          <input
+          type="text"
+          placeholder="Name"
+          class="absolute top-[0px] left-[0px] rounded-md bg-brand-colors-crypto-frost box-border w-[400px] h-[51px] border-b-[6px] border-solid border-brand-colors-decentralized-coral"
+          required
+          /></div>
           <div
             class="absolute top-[485px] left-[101px] rounded-md bg-brand-colors-crypto-frost box-border w-[400px] h-[51px] z-[2] border-b-[6px] border-solid border-brand-colors-decentralized-coral"
-          ></div>
+          >
+          <input
+          type="email"
+          placeholder="example@google.com"
+          class="absolute top-[0px] left-[0px] rounded-md bg-brand-colors-crypto-frost box-border w-[400px] h-[51px] border-b-[6px] border-solid border-brand-colors-decentralized-coral"
+          required
+          /></div>
           <textarea
+            name="message"
+            placeholder="a short message..."
             class="absolute top-[546px] left-[101px] rounded-md bg-brand-colors-crypto-frost box-border w-[400px] h-[181px] z-[2] border-b-[6px] border-solid border-brand-colors-decentralized-coral resize-none"
             rows="9"
             cols="20"
-          >
-          </textarea>
+            class="w-full h-full rounded-md bg-transparent border-none resize-none"
+            rows="9"
+            cols="20"
+            required
+            value=""
+          ></textarea>
         </div>
         <button
-          class="cursor-pointer py-3 px-9 bg-brand-colors-node-indigo w-[157px] h-[62px] rounded-81xl box-border flex flex-row items-center justify-center z-[1] border-t-[2px] border-solid border-brand-colors-cryptowave-sky border-r-[2px] border-b-[6px] border-l-[2px] hover:bg-darkslateblue"
+          class="cursor-pointer py-3 px-9 bg-brand-colors-node-indigo w-[157px] h-[62px] rounded-[.375rem] box-border flex flex-row items-center justify-center z-[1] border-t-[2px] border-solid border-brand-colors-cryptowave-sky border-r-[2px] border-b-[6px] border-l-[2px] hover:bg-darkslateblue"
         >
           <b
             class="text-5xl lowercase font-body-s text-brand-colors-crypto-frost min-w-[81px] mq450:text-lgi"
             >submit</b
           >
         </button>
+    </form>
       </section>
       <section
         class="w-screen h-[100px] absolute !m-[0] right-0 bottom-[495px] left-0 bg-brand-colors-decentralized-coral overflow-hidden shrink-0 z-[3]"
