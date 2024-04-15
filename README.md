@@ -1,5 +1,5 @@
 
-  # Axol.io • Brand Identity & Website (Copy)
+  # Axol.io • HTML/Tailwind CSS implementation
 
   Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
 
