@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         "body-s": "'Plus Jakarta Sans'",
         h4: "Panamera",
+        "panamera": ["'Panamera'", 'sans-serif'],
       },
       borderRadius: {
         "8981xl": "9000px",

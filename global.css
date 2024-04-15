@@ -31,3 +31,17 @@ body {
 :root {
   --brand-colors-node-indigo: #28338b;
 }
+
+@font-face {
+  font-family: 'Panamera';
+  src: url('./fonts/Panamera-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panamera';
+  src: url('./fonts/Panamera-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
